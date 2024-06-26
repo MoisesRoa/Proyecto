@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+    <title>El Rey del Huevo</title>
+</head>
+<body>    
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-sm bg-custom navbar-light navbar-custom">
+      <div class="container-fluid">
+          
+          <!-- Logotipo -->
+          <a class="navbar-brand" href="{% url 'home' %}">
+              <img id="logo" src="{% static 'img/Logo.png'%}" alt="Avatar Logo" class="rounded-pill"> 
+          </a>
+
+          <!-- Botones de navegación -->
+          <div class="botones">
+              <form class="d-flex">
+                  <a class="btn btn-primary me-2" href="{% url 'home'%}">Inicio</a>
+                  <a class="btn btn-primary me-2" href="{% url 'productos'%}">Productos</a>
+                  <a class="btn btn-primary me-2" href="{% url 'contacto'%}">Contacto</a>
+                  <a class="btn btn-primary me-2" href="{% url 'quienes_somos'%}">Quienes Somos</a>
+              </form>
+          </div>
+          <!-- Fin de botones -->
+
+          <!-- Icono Usuario -->
+          <a class="navbar-brand" href="{% url 'login'%}">
+              <img id="usuario" src="{% static 'img/Usuario123.png' %}" alt="Avatar Logo" class="rounded-pill"> 
+          </a>
+      </div>
+  </nav>
+  <!-- Fin de Barra -->
+
+    <!-- Carrusel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Puntos para navegar -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- Imagenes del Carrusel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/Carrusel1.webp'%}" alt="Imagen 1" class="d-block w-100">
+        <!-- Para darle texto a las imagenes
+        <div class="carousel-caption">
+            <h3>Titulo</h3>
+            <p>Texto</p>
+        </div>
+        -->
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/Carrusel2.jpg'%}" alt="Imagen 2" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/Carrusel3.jpeg'%}" alt="Imagen 3" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Flechas para deslizar -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- Fin Carrusel -->
+
+    <!-- Parrafo bajo el carrusel -->
+    <div id="Presentacion">
+        <p></p>
+        <p>En "El Rey del Huevo", nos enorgullecemos de ofrecerte los huevos más frescos y de la más alta calidad. 
+        Nuestra misión es proporcionarte productos que no solo sean deliciosos, sino también nutritivos y saludables para ti y tu familia.</p>
+    </div>
+    
+    <!-- Título con imagen a lado derecho bajo el carrusel -->
+    <div id="Invitacion">
+        <h1>ECHA UN VISTAZO A NUESTROS PRODUCTOS</h1>
+        <img src="{% static 'img/Huevos.png'%}" alt="Tipos de Huevo" id="huevos">     
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+    
+          <!-- Cabecera -->
+          <div class="modal-header">
+            <div>
+              <h1 id="tituloModal">¡Bienvenido a El Rey del Huevo!</h1>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Cuerpo -->
+          <div class="modal-body">
+            <h2 id="slogan">LOS HUEVOS MÁS FRESCOS <br>DIRECTO DEL CAMPO A TU MESA</h2>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <!-- Fin del Modal -->
+    
+    <!-- Pie de página -->
+    <footer>
+    </div>
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+      <h1>El Rey Del Huevo</h1>
+      <p><a href="{% url 'home'%}">Volver Arriba</a></p>
+      <div class="row">
+        <div class="col-sm-3"><img src="{% static 'img/whatapp.png'%}" alt="Redes" class="img"> +56 9 2323 4343</div>
+        <div class="col-sm-3"><img src="{% static 'img/instagram.png'%}" alt="Redes" class="img"> Rey del Huevo_CL</div>
+        <div class="col-sm-3"><img src="{% static 'img/twitter.png'%}" alt="Redes" class="img"> Rey del Huevo_CL</div>
+      </div>
+    </div>
+    </footer>
+
+    <script>
+      $(document).ready(function() {
+        $('#Modal').modal('show');
+      });
+    </script>
+</body>
+</html>

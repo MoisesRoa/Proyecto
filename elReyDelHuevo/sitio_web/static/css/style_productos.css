@@ -1,0 +1,147 @@
+body{
+    background-color: #CFC6C6;
+}
+
+footer{
+	background:#B1B0B0;
+	height:80px;
+	width:100%;
+	float:left;
+	margin-top: 30px;
+	padding-left: 10px;
+    font-weight: bolder;
+
+}
+
+/* Barra de Navegación */
+.navbar-custom {
+    background-color: white;
+  }
+
+#logo{
+    width: 120px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+.botones{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.d-flex{
+    margin-right: 30px;
+}
+
+.btn{
+    width: 150px
+}
+
+#usuario{
+    width: 90px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+/* Fin Barra de Navegación */
+
+/* Carrusel */
+.carousel-item{
+height: 300px;
+}
+
+/* Elementos bajo el carrusel */
+#Presentacion{
+    font-weight: bolder;
+    padding: 5px;
+    position: absolute;
+    left: 0%;
+    margin-right: 70%;
+    text-align: center; 
+}
+
+#Invitacion{
+    float: right;    
+}
+
+#huevos{
+    margin-left: -300px;;
+}
+
+#Presentacion, #Invitacion{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 50%;
+}
+/* Fin de Inicio */
+
+
+/* Productos */
+
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(4, 40, 139, 0.75);
+    background-color: #fffefe;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #d9fd0d;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    font-family: sans-serif;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.informacion button{
+    background-color: #ff8903;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #ffa237;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,68 @@
+body{
+    background-color: #FEFF98;
+    background-image: url(../img/Fondo.webp);
+    background-size: cover;
+}
+
+/* Barra de Navegación */
+.navbar-custom {
+    background-color: white;
+  }
+
+#logo{
+    width: 120px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+.botones{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.d-flex{
+    margin-right: 30px;
+}
+
+.btn{
+    width: 150px
+}
+
+#usuario{
+    width: 90px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+/* Fin Barra de Navegación */
+
+/*Contenedor del parrado*/
+#Contenedor{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#contenido{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#final{
+    font-weight: bold;
+}
+
+#footer{
+    margin-top: 45%;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+}

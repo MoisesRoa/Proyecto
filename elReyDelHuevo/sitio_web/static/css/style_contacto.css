@@ -1,0 +1,150 @@
+html,body{
+    background-image: url(../img/Fondo.webp);
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper{
+    flex: 1;
+}
+
+/* Barra de Navegación */
+.navbar-custom {
+    background-color: white;
+  }
+
+#logo{
+    width: 120px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+.botones{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.d-flex{
+    margin-right: 30px;
+}
+
+.btn{
+    width: 150px
+}
+
+#usuario{
+    width: 90px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+/* Fin Barra de Navegación */
+
+#Contenido{
+    background-color: #ffffffcb;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1850px;
+    padding: 30px;
+    margin-top: 25px;
+    box-sizing: border-box;    
+}
+
+/*Elementos centrales*/
+.Contacto{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#Gallina{
+    width: 400px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+/*Informacion de Contacto*/
+
+    /*WhatsApp*/
+    #Whatsapp{
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 50px;
+
+    }
+
+    #wsp_logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    #numero{
+        font-size: 50px;
+        font-weight: 1000;
+    }
+
+    /*Gmail*/
+    #Gmail{
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    #gmail_logo{
+        width: 300px;
+        height: 200px;
+    }
+
+    #correo{
+        font-size: 50px;
+        font-weight: 1000;
+    }
+
+    /*Direccion*/
+    #Direccion{
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-top: -525px;
+    }
+
+    #direccion_logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    #direccion{
+        font-size: 40px;
+        font-weight: 1000;
+    }
+
+    /*Fono*/
+    #Fono{
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        margin-top: -200px;
+    }
+
+    #fono_logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    #fono{
+        font-size: 50px;
+        font-weight: 1000;
+        margin-left: 50px;
+    }
+
+    .img{
+        width: 30px;
+        height: 30px;
+    }

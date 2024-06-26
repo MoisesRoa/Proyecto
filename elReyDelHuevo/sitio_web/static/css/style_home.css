@@ -1,0 +1,124 @@
+body{
+    background-color: #CFC6C6;
+}
+
+footer{
+	background:#B1B0B0;
+	height:80px;
+	width:100%;
+	float:left;
+	margin-top: 30px;
+	padding-left: 10px;
+    font-weight: bolder;
+
+}
+
+/* Barra de Navegación */
+.navbar-custom {
+    background-color: white;
+  }
+
+#logo{
+    width: 120px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+.botones{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.d-flex{
+    margin-right: 30px;
+}
+
+.btn{
+    width: 150px
+}
+
+#usuario{
+    width: 90px;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+/* Fin Barra de Navegación */
+
+/* Carrusel */
+.carousel-item{
+height: 700px;
+}
+
+/* Elementos bajo el carrusel */
+#Presentacion{
+    font-weight: bolder;
+    padding: 5px;
+    position: absolute;
+    left: 0%;
+    margin-right: 70%;
+    text-align: center; 
+    font-family: sans-serif;
+    font-size: 27px;
+}
+
+#Invitacion{
+    float: right;
+    font-family: sans-serif;
+}
+
+#huevos{
+    margin-left: -252px;;
+}
+
+#Presentacion, #Invitacion{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 50%;
+}
+/* Fin de Inicio */
+
+/*Modal*/
+#Modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: block;;
+}
+
+.modal-header{
+    background-color: #0d6efd;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+#tituloModal{
+    color: white;
+    margin-left: 100px;
+}
+
+.modal-body{
+    background-image: url(../img/Modal.jpg);
+    background-size: cover;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+    height: 400px;
+    text-align: center;
+}
+
+#slogan{
+    font-weight: bold;
+    color: rgb(104, 64, 5);
+    background-color: #c2ac2e;
+}
+
+.modal-footer{
+    background-color: #0d6efd;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+}
